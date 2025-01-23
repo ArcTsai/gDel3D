@@ -48,38 +48,6 @@ target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/GDelFlipping/src
 )
 
-# Add Thrust dependencies
-target_link_libraries(${PROJECT_NAME} PRIVATE 
-    CUDA::cudart
-    CUDA::cuda_driver
-    ${CUDA_LIBRARIES}
-    ${CUDA_cublas_LIBRARY}
-    ${CUDA_cublasLt_LIBRARY}
-    ${CUDA_cudadevrt_LIBRARY}
-    ${CUDA_cudart_static_LIBRARY}
-    ${CUDA_cufft_LIBRARY}
-    ${CUDA_cufftw_LIBRARY}
-    ${CUDA_curand_LIBRARY}
-    ${CUDA_cusolver_LIBRARY}
-    ${CUDA_cusolverMg_LIBRARY}
-    ${CUDA_cusparse_LIBRARY}
-    ${CUDA_nppc_LIBRARY}
-    ${CUDA_nppial_LIBRARY}
-    ${CUDA_nppicc_LIBRARY}
-    ${CUDA_nppidei_LIBRARY}
-    ${CUDA_nppif_LIBRARY}
-    ${CUDA_nppig_LIBRARY}
-    ${CUDA_nppim_LIBRARY}
-    ${CUDA_nppist_LIBRARY}
-    ${CUDA_nppisu_LIBRARY}
-    ${CUDA_nppitc_LIBRARY}
-    ${CUDA_npps_LIBRARY}
-    ${CUDA_nvblas_LIBRARY}
-    ${CUDA_nvJitLink_LIBRARY}
-    ${CUDA_nvjpeg_LIBRARY}
-    ${CUDA_nvrtc_LIBRARY}
-    ${CUDA_OpenCL_LIBRARY}
-)
 
 # Compiler options
 target_compile_options(${PROJECT_NAME} PRIVATE
